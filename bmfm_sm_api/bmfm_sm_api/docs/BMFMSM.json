@@ -1,0 +1,495 @@
+{
+    "model_id": "bmfm-sm-pred",
+    "display_name": "bmfm-sm-pred",
+    "description": "get all properties for a given small molecule",
+    "task": "properties-prediction",
+    "input_params": [
+        {
+            "param_id": "generated_molecule",
+            "display_name": "generated_molecule",
+            "type": "string",
+            "description": "string of smiles to calculate properties",
+            "min_value": "",
+            "max_value": ""
+        }
+    ],
+    "properties": [
+        {
+            "param_id": "AA1R",
+            "display_name": "AA1R",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSc1nc(N)nc(-c2cccc(-c3ccc4[nH]ccc4c3)c2)n1,6.661543506",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "AA2AR",
+            "display_name": "AA2AR",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSCCn1c(=O)c2[nH]c(Cc3cccs3)nc2n(Cc2ccco2)c1=O,5.679999196",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "AA3R",
+            "display_name": "AA3R",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSc1nc(NC(=O)Nc2ccccc2)n2nc(-c3ccco3)nc2n1,6.382999658999999",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "ACE2_ENZYMATIC_ACTIVITY",
+            "display_name": "ACE2_ENZYMATIC_ACTIVITY",
+            "description": "Activity against angiotensin converting enzyme 2 (SARS-COV-2 viral entry)",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "BACE",
+            "display_name": "BACE",
+            "description": "MoleculeNet: Inhibition of human beta secretase 1",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "BBBP",
+            "display_name": "BBBP",
+            "description": "MoleculeNet: Blood brain barrier penetration",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "BTK",
+            "display_name": "BTK",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "CDK4_CYCLIND3",
+            "display_name": "CDK4_CYCLIND3",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "CLINTOX",
+            "display_name": "CLINTOX",
+            "description": "MoleculeNet: Toxicity data of FDA-approved drugs and those that fail clinical trials",
+            "type": "float",
+            "example": "[N+](=O)([O-])[O-],1 0",
+            "min_value": "0,0",
+            "max_value": "1,1"
+        },
+        {
+            "param_id": "CNR2",
+            "display_name": "CNR2",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSc1c(C(=O)NN2CCCCCC2)nc(-c2ccc(Cl)cc2Cl)n1-c1ccc(Cl)cc1,6.488116638999999",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "CYP450_TRAINSET",
+            "display_name": "CYP450_TRAINSET",
+            "description": "Multi-task inhibition against 5 CYP450 isoforms",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0 0 0 0 0",
+            "min_value": "0,0,0,0,0",
+            "max_value": "1,1,1,1,1"
+        },
+        {
+            "param_id": "DRD2",
+            "display_name": "DRD2",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSc1ncc2c(n1)CC(CN1CCC(c3noc4cc(F)ccc34)CC1)CC2=O,7.489991487",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "DRD3",
+            "display_name": "DRD3",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSc1ncc2c(n1)CC(CN1CCC(c3noc4cc(F)ccc34)CC1)CC2=O,7.349984048",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "DS_3CL_ENZYMATIC_ACTIVITY",
+            "display_name": "DS_3CL_ENZYMATIC_ACTIVITY",
+            "description": "Viral Replication. Activity against 3CL-like protease",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "DS_5HT1A",
+            "display_name": "DS_5HT1A",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSc1ccccc1OCCN1CCC(CNS(=O)(=O)c2cccc(Cl)c2)CC1,7.744727495",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "DS_5HT2A",
+            "display_name": "DS_5HT2A",
+            "description": "Ligand-GCPR binding activity",
+            "type": "float",
+            "example": "CSc1ncc2c(n1)CC(CN1CCC(c3noc4cc(F)ccc34)CC1)CC2=O,8.340036287",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "EGFR",
+            "display_name": "EGFR",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "ESOL",
+            "display_name": "ESOL",
+            "description": "MoleculeNet: Water solubility data for organics",
+            "type": "float",
+            "example": "OCC3OC(OCC2OC(OC(C#N)c1ccccc1)C(O)C(O)C2O)C(O)C(O)C3O,-0.77",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "FGFR1",
+            "display_name": "FGFR1",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "FGFR2",
+            "display_name": "FGFR2",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "FGFR3",
+            "display_name": "FGFR3",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "FGFR4",
+            "display_name": "FGFR4",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "FLT3",
+            "display_name": "FLT3",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "FREESOLV",
+            "display_name": "FREESOLV",
+            "description": "MoleculeNet: Hydration free energy",
+            "type": "float",
+            "example": "CN(C)C(=O)c1ccc(cc1)OC,-11.01",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "HEK293_CELL_LINE_TOXICITY",
+            "display_name": "HEK293_CELL_LINE_TOXICITY",
+            "description": "Tox Counterscreen for SARS-COV-2 therapeutics",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "HIV",
+            "display_name": "HIV",
+            "description": "MoleculeNet: Inhibition of HIV viral replication",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "HRH3",
+            "display_name": "HRH3",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSCCOc1ccc2c(c1)CCC1(CCN(C3CCC3)CC1)O2,7.420216402999999",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "HUMAN_FIBROBLAST_TOXICITY",
+            "display_name": "HUMAN_FIBROBLAST_TOXICITY",
+            "description": "Tox Counterscreen for SARS-COV-2 therapeutics",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "KPCD3",
+            "display_name": "KPCD3",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "LIPOPHILICITY",
+            "display_name": "LIPOPHILICITY",
+            "description": "MoleculeNet: Octonol/water distribution coeffficient",
+            "type": "float",
+            "example": "Cn1c(CN2CCN(CC2)c3ccc(Cl)cc3)nc4ccccc14,3.54",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "MERS_PSEUDOTYPED_PARTICLE_ENTRY",
+            "display_name": "MERS_PSEUDOTYPED_PARTICLE_ENTRY",
+            "description": "In vitro infectivity (MERS)",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "MERS_PSEUDOTYPED_PARTICLE_ENTRY_HUH7_TOX_COUNTERSCREEN",
+            "display_name": "MERS_PSEUDOTYPED_PARTICLE_ENTRY_HUH7_TOX_COUNTERSCREEN",
+            "description": "Counterscreen MERS",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "MET",
+            "display_name": "MET",
+            "description": "Ligand-Kinase binding activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "MUV",
+            "display_name": "MUV",
+            "description": "MoleculeNet: PubChem derived target-activity tasks for virtual screening",
+            "type": "float",
+            "example": "Cc1cccc(N2CCN(C(=O)C34CC5CC(CC(C5)C3)C4)CC2)c1C,-1 -1 -1 -1 -1 -1 -1 0 -1 -1 -1 0 -1 -1 -1 -1 -1",
+            "min_value": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "max_value": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+        },
+        {
+            "param_id": "OPRM",
+            "display_name": "OPRM",
+            "description": "Ligand-GPCR binding activity",
+            "type": "float",
+            "example": "CSCCC(NC(=O)C(Cc1ccccc1)NC(=O)CNC(=O)CNC(=O)C(N)Cc1ccc(O)cc1)C(=O)O,9.187086643",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "PCBA",
+            "display_name": "PCBA",
+            "description": "MoleculeNet: PubChem derived target-activity (binding affinity) tasks",
+            "type": "float",
+            "example": "CC(=O)N1CCC2(CC1)NC(=O)N(c1ccccc1)N2,0 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 0 -1 0 0 0 0 0 0 0 0 0 -1 0 0 0 0 0 0 0 0 0 0 -1 0 0 0 -1 0 -1 0 0 -1 0 0 0 0 0 0 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 0 -1 0 0 0 0 1 -1 0 0 -1 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1",
+            "min_value": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "max_value": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+        },
+        {
+            "param_id": "QM7",
+            "display_name": "QM7",
+            "description": "MoleculeNet: Electronic properties derived from DFT. Dataset contains up to 7 heavy atoms",
+            "type": "float",
+            "example": "C([H])([H])([H])[H],-417.96",
+            "min_value": "-inf",
+            "max_value": "inf"
+        },
+        {
+            "param_id": "QM9",
+            "display_name": "QM9",
+            "description": "MoleculeNet: Geometric and electronic properties dervied from DFT.  Dataset contains up to 9 heavy atoms",
+            "type": "float",
+            "example": "C,0.0 13.21 -0.3877 0.1171 0.5048 35.3641 0.044749000000000004 6.468999999999999 -40.47893 -40.476062 -40.475117 -40.498597",
+            "min_value": "-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf",
+            "max_value": "inf,inf,inf,inf,inf,inf,inf,inf,inf,inf,inf,inf"
+        },
+        {
+            "param_id": "SARS_COV_2_CYTOPATHIC_EFFECT_CPE",
+            "display_name": "SARS_COV_2_CYTOPATHIC_EFFECT_CPE",
+            "description": "Live virus infectivity (CPE)",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "SARS_COV_2_CYTOPATHIC_EFFECT_HOST_TOX_COUNTERSCREEN",
+            "display_name": "SARS_COV_2_CYTOPATHIC_EFFECT_HOST_TOX_COUNTERSCREEN",
+            "description": "Counterscreen against CPE",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "SARS_COV_PSEUDOTYPED_PARTICLE_ENTRY",
+            "display_name": "SARS_COV_PSEUDOTYPED_PARTICLE_ENTRY",
+            "description": "In vitro infectivity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "SARS_COV_PSEUDOTYPED_PARTICLE_ENTRY_VEROE6_TOX_COUNTERSCREEN",
+            "display_name": "SARS_COV_PSEUDOTYPED_PARTICLE_ENTRY_VEROE6_TOX_COUNTERSCREEN",
+            "description": "Counterscreen against in vitro infectivitiy",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "SIDER",
+            "display_name": "SIDER",
+            "description": "MoleculeNet: Side Effect Resource.  Market drugs and their adverse drug reactions/side effects",
+            "type": "float",
+            "example": "C(CNCCNCCNCCN)N,1 1 0 0 1 1 1 0 0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 1 1 1 0",
+            "min_value": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "max_value": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+        },
+        {
+            "param_id": "SPIKE_ACE2_PROTEIN_PROTEIN_INTERACTION_ALPHALISA",
+            "display_name": "SPIKE_ACE2_PROTEIN_PROTEIN_INTERACTION_ALPHALISA",
+            "description": "Viral entry inhbition",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "SPIKE_ACE2_PROTEIN_PROTEIN_INTERACTION_TRUHIT_COUNTERSCREEN",
+            "display_name": "SPIKE_ACE2_PROTEIN_PROTEIN_INTERACTION_TRUHIT_COUNTERSCREEN",
+            "description": "Counterscreen",
+            "type": "float",
+            "example": "",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "TMPRSS2_ENZYMATIC_ACTIVITY",
+            "display_name": "TMPRSS2_ENZYMATIC_ACTIVITY",
+            "description": "Viral entry. Transmembrance protease serine 2 activity",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "TOX21",
+            "display_name": "TOX21",
+            "description": "MoleculeNet: Toxicity against set of targets",
+            "type": "float",
+            "example": "CCOc1ccc2nc(S(N)(=O)=O)sc2c1,0 0 1 -1 -1 0 0 1 0 0 0 0",
+            "min_value": "0,0,0,0,0,0,0,0,0,0,0,0",
+            "max_value": "1,1,1,1,1,1,1,1,1,1,1,1"
+        },
+        {
+            "param_id": "TOXCAST",
+            "display_name": "TOXCAST",
+            "description": "MoleculeNet: Toxicology data for a large libary of compounds",
+            "type": "float",
+            "example": "[O-][N+](=O)C1=CC=C(Cl)C=C1,0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 -1 -1 0 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 0 -1 1 0 -1 1 -1 0 -1 -1 -1 -1 -1 0 -1 1 -1 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 -1 -1 0 -1 -1 -1 0 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 -1 0 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+            "min_value": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "max_value": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+        },
+        {
+            "param_id": "TRAINSET_CYP1A2",
+            "display_name": "TRAINSET_CYP1A2",
+            "description": "PubChem-derived inhibition of CYP450 1A2 isoform",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "TRAINSET_CYP2C19",
+            "display_name": "TRAINSET_CYP2C19",
+            "description": "PubChem-derived inhibition of CYP450 2C19 isoform",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "TRAINSET_CYP2C9",
+            "display_name": "TRAINSET_CYP2C9",
+            "description": "PubChem-derived inhibition of CYP450 2C9 isoform",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "TRAINSET_CYP2D6",
+            "display_name": "TRAINSET_CYP2D6",
+            "description": "PubChem-derived inhibition of CYP450 2D6 isoform",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        },
+        {
+            "param_id": "TRAINSET_CYP3A4",
+            "display_name": "TRAINSET_CYP3A4",
+            "description": "PubChem-derived inhibition of CYP450 3A4 isoform",
+            "type": "float",
+            "example": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0",
+            "min_value": "0",
+            "max_value": "1"
+        }
+    ]
+}

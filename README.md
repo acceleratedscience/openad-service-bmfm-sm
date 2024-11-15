@@ -1,1 +1,1 @@
-# bmfm-collection
+# BMFM small molecules api inference server

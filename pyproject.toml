@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bmfm_sm"
+version = "0.1.0"
+description = "Small Molecules Inference"
+dynamic = ["dependencies","dependencies_extra"]
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+authors = [
+    {name = "Brian Duenas", email = "Brian.Duenas@ibm.com"},
+    {name = "Dean Elzinga", email = "dean.elzinga@ibm.com"},
+    {name = "Phil Downey", email = "phil.downey1@ibm.com"}
+]
+license = { text = "MIT" }
+dependencies = {file = ["requirements.txt"],file = ["requirements_extra.txt"]}
+dependencies_extra = {file = ["requirements_extra.txt"]}
+
+[tool.ruff]
+fix = true
+line-length = 120
+target-version = "py310"
+show-fixes = true
+
+[tool.ruff.lint]
+ignore = [
+    "E722", # Do not use bare `except`
+    "F401", # imported but unused
+    "E402", # gt4sd top level submodule
+]

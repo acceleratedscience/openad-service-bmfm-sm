@@ -27,6 +27,13 @@ you will now have to wait until the service is available use `sky status` to see
 ### Deploying on podman / docker 
 run on the command line `mkdir -p ~/.openad_models`
 
+***Note:*** <br>
+Initially downloading models may take some time, this will be prompted by your first request. To pre-load models you can run the following <br>
+`mkdir -p ~/.openad_models/properties/molecules && aws s3 sync s3://ad-prod-biomed/molecules/small_molecules/ /tmp/.openad_models/properties/molecules/small_molecules --no-sign-request --exact-timestamps`
+
+it does require installing the AWS cli which can be found here..
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html
+
 then using Podman or Docker run the following in the same directory as the compose.yaml file:
 step 1:
 `compose create`
@@ -41,6 +48,11 @@ In openad run the following command
 ### Deploying in venv
 you will need a python level of 3.11 & to follow the following installation directions:
 https://github.com/BiomedSciAI/biomed-multi-view
+
+***Note:*** <br>
+Initially downloading models may take some time, this will be prompted by your first request. To pre-load models you can run the following <br>
+`mkdir -p ~/.openad_models/properties/molecules && aws s3 sync s3://ad-prod-biomed/molecules/small_molecules/ /tmp/.openad_models/properties/molecules/small_molecules --no-sign-request --exact-timestamps`
+
 
 Then run `python ./bmfm_sm_api/sm_implementation.py`
 

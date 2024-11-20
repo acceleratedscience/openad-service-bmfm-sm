@@ -15,7 +15,7 @@ authors = [
     {name = "Phil Downey", email = "phil.downey1@ibm.com"}
 ]
 license = { text = "MIT" }
-dependencies = {file = ["requirements.txt"],file = ["requirements_extra.txt"]}
+dependencies = {file = ["requirements.txt"]}
 dependencies_extra = {file = ["requirements_extra.txt"]}
 
 [tool.ruff]

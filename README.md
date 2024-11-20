@@ -1,5 +1,12 @@
 # BMFM Small Molecules Inference for Smiles
 
+## About:
+the below Repository is based on the FOundation Model Biomed0multi0view and provides checkpoints for the following properties [ BACE, BBBP, CLINTOX, ESOL, FREESOLV, HIV, LIPOPHILICITY, MUV, QM7, SIDER, TOX21, TOXCAST ].
+
+Pore information can be found at:
+https://github.com/BiomedSciAI/biomed-multi-view
+
+
 ## Deployment Options
 
 

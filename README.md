@@ -32,8 +32,10 @@ In openad run the following command
 `catalog model service from remote 'http://127.0.0.1:8080/' as sm`
 
 ### Deploying in venv
+you will need a python level of 3.11 & to follow the following installation directions:
+https://github.com/BiomedSciAI/biomed-multi-view
 
-to deploy simply run `pip install .` the run `python ./bmfm_sm_api/sm_implementation.py`
+Then run `python ./bmfm_sm_api/sm_implementation.py`
 
 
 In openad run the following command once the container is up and running

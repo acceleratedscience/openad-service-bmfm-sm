@@ -8,6 +8,9 @@ buildConfig:
   name: sm-build
   gitUri: "https://github.com/acceleratedscience/bmfm-sm.git"
   gitRef: "main"
+  webhook:
+    enabled: true
+    secret: "dockerfile-webhook-secret"
 
 image:
   repository: bmfm-sm-inference

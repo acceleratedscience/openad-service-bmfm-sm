@@ -15,3 +15,14 @@ spec:
     to:
       kind: ImageStreamTag
       name: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+{{- if .Values.buildConfig.webhook.enabled }}
+  triggers:
+  - type: "GitHub"
+    github:
+      secretReference:
+        name: {{ .Values.buildConfig.name }}-webhook-secret
+  - type: "Generic"
+    generic:
+      secretReference:
+        name: {{ .Values.buildConfig.name }}-webhook-secret
+{{- end -}}

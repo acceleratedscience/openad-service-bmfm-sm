@@ -89,4 +89,4 @@ if __name__ == "__main__":
     from openad_service_utils import start_server
 
     # start server that picks up registered sm model
-    start_server(max_workers=10)
+    start_server(max_workers=1)

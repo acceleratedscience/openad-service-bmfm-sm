@@ -89,7 +89,7 @@ In openad run the following command
 
 You can use the compose.yaml file rather than download the entire repository
 
-https://github.com/acceleratedscience/bmfm-sm/blob/main/compose.yaml
+https://github.com/acceleratedscience/bmfm-sm/blob/main/compose.yaml#L1-L100
 
 
 

@@ -86,10 +86,15 @@ the service will start on poert `8080` change this in the compose file if you wi
 In openad run the following command
 `catalog model service from remote 'http://127.0.0.1:8080/' as sm`
 
+### Notes
 
-You can use the compose.yaml file rather than download the entire repository
+- The container used is https://quay.io/ibmdpdev/bmfm_sm_properties:latest
 
-https://github.com/acceleratedscience/bmfm-sm/blob/main/compose.yaml#L1-L100
+- You can use the compose.yaml file rather than download the entire repository
+
+https://github.com/acceleratedscience/bmfm-sm/blob/main/compose.yaml
+
+- This has been run soccessfully on Mac OS with Podman and Rosetta.
 
 
 

@@ -9,8 +9,7 @@
 ## About: <!-- omit from toc -->
 the below Repository is based on the Foundation Model Biomedmultiview and provides checkpoints for the following properties [ BACE, BBBP, CLINTOX, ESOL, FREESOLV, HIV, LIPOPHILICITY, MUV, QM7, SIDER, TOX21, TOXCAST ].
 
-![MultiView diagram](images/overview.png)
-
+<img src='images/overview.png' :heigth="60%" width="60%" >
 
 More information can be found at:<br> 
 https://github.com/BiomedSciAI/biomed-multi-view and https://arxiv.org/abs/2410.19704

@@ -26,6 +26,8 @@ https://github.com/BiomedSciAI/biomed-multi-view and https://arxiv.org/abs/2410.
 
 - [Deployment locally via container](#deployment-locally-via-container)
 
+- [Deployment On OpenShift](#deployment-lon-openshift)
+
 - [Deployment via Sky Pilot](#deployment-via-sky-pilot)
 
 <!-- tocstop -->
@@ -84,6 +86,19 @@ the service will start on poert `8080` change this in the compose file if you wi
 In openad run the following command
 `catalog model service from remote 'http://127.0.0.1:8080/' as sm`
 
+
+You can use the compose.yaml file rather than download the entire repository
+
+https://github.com/acceleratedscience/bmfm-sm/blob/main/compose.yaml
+
+
+
+# Deployment On OpenShift
+Helm Charts are available for OpenShift including Auto scaling of services.
+
+See the helm-chart directory in the repository
+
+This currently does not support aynchronous requests, you can enable it if you deploy a shared filesystem, or only have a single pod running.
 
 
 # Deployment via Sky Pilot

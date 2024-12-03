@@ -45,10 +45,11 @@ RUN --mount=type=ssh pip install --no-cache-dir -r api_workspace/requirements.tx
 RUN --mount=type=ssh pip install --no-cache-dir -r api_workspace/requirements_extra.txt 
 #RUN pip install .
 
-COPY . ./api_workspace
+
 ENV HF_HOME="/tmp/.cache/huggingface" \
 MPLCONFIGDIR="/tmp/.config/matplotlib" \
 LOGGING_CONFIG_PATH="/tmp/app.log" \
 gt4sd_local_cache_path="/tmp/.openad_models" 
+COPY . ./api_workspace
 # Specify the command to run when the container starts
 CMD ["python", "api_workspace/bmfm_sm_api/sm_implementation.py"]

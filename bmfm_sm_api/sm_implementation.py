@@ -52,6 +52,8 @@ class BmfmSM_Predictor(SimplePredictor):
         # how it would run, and just do it for 1 concrete model.
         os.environ["BMFM_HOME"] = self.get_model_location()
         print(self.get_model_location())
+        self.models = {}
+        self.datasets = {}
         # Right now samples is actually singular, the molecule, eg, "C1Nc2ccccc2C1(OC1(CC)C(OO1))"
 
     def predict(self, samples):
@@ -62,10 +64,16 @@ class BmfmSM_Predictor(SimplePredictor):
         # os.environ["BMFM_HOME"] = self.get_model_location()[:end_index]
         model = self.get_selected_property()
         print(f"sample: {samples},  selected model: {model}")
-        result = {samples: {}}
-        model_dataset = DatasetRegistry.get_instance().get_dataset_info(model)
-        d_model = SmallMoleculeMultiViewModel.from_finetuned(model_dataset)
-        d_model.eval()
+        if not self.models.get(model):
+            result = {samples: {}}
+            model_dataset = DatasetRegistry.get_instance().get_dataset_info(model)
+            d_model = SmallMoleculeMultiViewModel.from_finetuned(model_dataset)
+            d_model.eval()
+            self.models[model] = d_model
+            self.datasets[model] = model_dataset
+        else:
+            d_model = self.models[model]
+            model_dataset = self.datasets[model]
         try:
             # model_result = get_predictions_text(samples, model_dataset, text_finetuned_checkpoint=d_model).tolist()
             model_result = SmallMoleculeMultiViewModel.get_predictions(

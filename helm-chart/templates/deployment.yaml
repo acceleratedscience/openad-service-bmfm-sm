@@ -4,6 +4,16 @@ metadata:
   name: {{ include "bmfm-sm-inference-chart.fullname" . }}
   labels:
     {{- include "bmfm-sm-inference-chart.labels" . | nindent 4 }}
+    app.kubernetes.io/component: application
+    app.openshift.io/runtime: python
+    app.openshift.io/build-config: {{ .Values.buildConfig.name }}
+  annotations:
+    app.openshift.io/connects-to: {{ .Values.buildConfig.name }}
+    app.openshift.io/vcs-uri: {{ .Values.buildConfig.gitUri }}
+    app.openshift.io/vcs-ref: {{ .Values.buildConfig.gitRef }}
+    app.openshift.io/builds: '{"kind":"BuildConfig","namespace":"{{ .Release.Namespace }}","name":"{{ .Values.buildConfig.name }}"}'
+    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"{{ .Values.image.repository }}:{{ .Values.image.tag }}","namespace":"{{ .Release.Namespace }}"},"fieldPath":"spec.template.spec.containers[?(@.name==\"{{ .Chart.Name }}\")].image","pause":"false"}]'
+    app.openshift.io/build-source: '{"type":"git","git":{"uri":"{{ .Values.buildConfig.gitUri }}","ref":"{{ .Values.buildConfig.gitRef }}"}}'
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}

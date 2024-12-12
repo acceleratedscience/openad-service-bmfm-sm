@@ -8,6 +8,7 @@ buildConfig:
   name: sm-build
   gitUri: "https://github.com/acceleratedscience/bmfm-sm.git"
   gitRef: "main"
+  strategy: Docker
 
 image:
   repository: bmfm-sm-inference

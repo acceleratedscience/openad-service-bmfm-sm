@@ -1,0 +1,6 @@
+helm-chart/
+images/
+.git
+.github
+.vscode
+.venv

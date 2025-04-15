@@ -12,7 +12,6 @@
 ### About
 
 <!-- description -->
-
 This OpenAD service provides access to the **Biomedmultiview** foundation model with checkpoints for the following properties:
 
 | BACE | BBBP | CLINTOX | ESOL | FREESOLV | HIV |
@@ -22,10 +21,8 @@ This OpenAD service provides access to the **Biomedmultiview** foundation model 
 | ------------- | --- | --- | ----- | ----- | ------- |
 
 More information:
-
 -   [github.com/BiomedSciAI/biomed-multi-view](https://github.com/BiomedSciAI/biomed-multi-view)
 -   [arxiv.org/abs/2410.19704](https://arxiv.org/abs/2410.19704)
-
 <!-- description -->
 
 ![image](images/overview.png)
@@ -36,7 +33,7 @@ More information:
 
 ## Deployment Options <!-- omit from toc -->
 
--   [x] [Deployment locally using a Python virtual environment](#)
+-   [-] [Deployment locally using a Python virtual environment](#)
 -   [x] [Deployment locally via container](#)
 -   [x] [Deployment On OpenShift](#)
 -   [x] [Deployment via Sky Pilot](#)

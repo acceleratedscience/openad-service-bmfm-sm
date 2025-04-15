@@ -25,9 +25,10 @@ More information:
 -   [arxiv.org/abs/2410.19704](https://arxiv.org/abs/2410.19704)
 <!-- description -->
 
-![image](images/overview.png)
 
----
+### Overview
+
+![image](images/overview.png)
 
 <br>
 

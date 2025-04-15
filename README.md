@@ -9,7 +9,7 @@
 
 <br>
 
-### About
+## About
 
 <!-- description -->
 This OpenAD service provides access to the **Biomedmultiview** foundation model with checkpoints for the following properties:
@@ -25,8 +25,9 @@ More information:
 -   [arxiv.org/abs/2410.19704](https://arxiv.org/abs/2410.19704)
 <!-- description -->
 
+<br>
 
-### Overview
+## Overview
 
 ![image](images/overview.png)
 

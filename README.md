@@ -33,7 +33,7 @@ More information:
 
 ## Deployment Options <!-- omit from toc -->
 
--   [-] [Deployment locally using a Python virtual environment](#)
--   [x] [Deployment locally via container](#)
--   [x] [Deployment On OpenShift](#)
--   [x] [Deployment via Sky Pilot](#)
+-   [-] [Deploy locally using a Python virtual environment](#)
+-   [x] [Deploy locally via container](#)
+-   [x] [Deploy On OpenShift](#)
+-   [x] [Deploy via Sky Pilot](#)

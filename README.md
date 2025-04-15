@@ -1,4 +1,4 @@
-# BMFM-SM - Small Molecules Inference for SMILES <!-- omit from toc -->
+# BMFM-SM &nbsp;/&nbsp; Small Molecules Inference for SMILES
 
 [![License MIT](https://img.shields.io/github/license/acceleratedscience/openad_service_utils)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -20,9 +20,9 @@ This OpenAD service provides access to the **Biomedmultiview** foundation model 
 | LIPOPHILICITY | MUV | QM7 | SIDER | TOX21 | TOXCAST |
 | ------------- | --- | --- | ----- | ----- | ------- |
 
-More information:
--   [github.com/BiomedSciAI/biomed-multi-view](https://github.com/BiomedSciAI/biomed-multi-view)
--   [arxiv.org/abs/2410.19704](https://arxiv.org/abs/2410.19704)
+More information:  
+[github.com/BiomedSciAI/biomed-multi-view](https://github.com/BiomedSciAI/biomed-multi-view)  
+[arxiv.org/abs/2410.19704](https://arxiv.org/abs/2410.19704)
 <!-- description -->
 
 <br>
@@ -33,7 +33,7 @@ More information:
 
 <br>
 
-## Deployment Options <!-- omit from toc -->
+## Deployment Options
 
 - ✅ [Deploy locally using a Python virtual environment](https://openad.accelerate.science/docs/model-service/prepackaged-models)
 - ✅ [Deploy locally via container](https://openad.accelerate.science/docs/model-service/prepackaged-models#containerizing-a-model)

@@ -33,7 +33,8 @@ More information:
 
 ## Deployment Options <!-- omit from toc -->
 
--   [-] [Deploy locally using a Python virtual environment](#)
--   [x] [Deploy locally via container](#)
--   [x] [Deploy On OpenShift](#)
--   [x] [Deploy via Sky Pilot](#)
+- ✅ [Deploy locally using a Python virtual environment](https://openad.accelerate.science/docs/model-service/prepackaged-models)
+- ✅ [Deploy locally via container](https://openad.accelerate.science/docs/model-service/prepackaged-models#containerizing-a-model)
+- ✅ [Deploy locally via container with compose.yml](https://openad.accelerate.science/docs/model-service/prepackaged-models#deployment-via-container-composeyml)
+- ✅ [Deploy on OpenShift](https://openad.accelerate.science/docs/model-service/prepackaged-models)
+- ✅ [Deploy on SkyPilot](https://openad.accelerate.science/docs/model-service/prepackaged-models/#deploying-to-skypilot-on-aws)

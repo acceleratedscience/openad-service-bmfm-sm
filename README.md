@@ -7,6 +7,10 @@
 ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
+<br>
+
+### About
+
 <!-- description -->
 
 This OpenAD service provides access to the **Biomedmultiview** foundation model with checkpoints for the following properties:
@@ -32,7 +36,7 @@ More information:
 
 ## Deployment Options <!-- omit from toc -->
 
--   [ ] [Deployment locally using a Python virtual environment](#)
--   [ ] [Deployment locally via container](#)
--   [ ] [Deployment On OpenShift](#)
--   [ ] [Deployment via Sky Pilot](#)
+-   [x] [Deployment locally using a Python virtual environment](#)
+-   [x] [Deployment locally via container](#)
+-   [x] [Deployment On OpenShift](#)
+-   [x] [Deployment via Sky Pilot](#)

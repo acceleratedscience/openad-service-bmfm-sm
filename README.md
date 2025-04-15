@@ -25,6 +25,8 @@ More information:
 [arxiv.org/abs/2410.19704](https://arxiv.org/abs/2410.19704)
 <!-- description -->
 
+For instructions on how to deploy and use this service in OpenAD, please refer to the [OpenAD docs](https://openad.accelerate.science/docs/model-service/prepackaged-models).
+
 <br>
 
 ## Overview

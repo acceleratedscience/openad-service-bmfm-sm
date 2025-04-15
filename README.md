@@ -1,8 +1,8 @@
-# BMFM Small Molecules Inference for Smiles <!-- omit from toc -->
+# BMFM-DM - Small Molecules Inference for SMILES <!-- omit from toc -->
 
 [![License MIT](https://img.shields.io/github/license/acceleratedscience/openad_service_utils)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Docs](https://img.shields.io/badge/website-live-brightgreen)](https://acceleratedscience.github.io/openad-docs/) <br>
+[![Docs](https://img.shields.io/badge/website-live-brightgreen)](https://acceleratedscience.github.io/openad-docs/)  
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -10,11 +10,12 @@
 ## About: <!-- omit from toc -->
 
 <!-- description -->
-This repository is based on the Foundation Model Biomedmultiview and provides checkpoints for the following properties:  
-BACE, BBBP, CLINTOX, ESOL, FREESOLV, HIV, LIPOPHILICITY, MUV, QM7, SIDER, TOX21, TOXCAST
+This OpenAD service provides access to the **Biomedmultiview** foundation model with checkpoints for the following properties:  
+`BACE` `BBBP` `CLINTOX` `ESOL` `FREESOLV` `HIV` `LIPOPHILICITY` `MUV` `QM7` `SIDER` `TOX21` `TOXCAST`
 
-More information can be found at:  
-https://github.com/BiomedSciAI/biomed-multi-view and https://arxiv.org/abs/2410.19704
+More information:  
+- [github.com/BiomedSciAI/biomed-multi-view](https://github.com/BiomedSciAI/biomed-multi-view)
+- [arxiv.org/abs/2410.19704](https://arxiv.org/abs/2410.19704)
 <!-- description -->
 
 <img src='images/overview.png' :heigth="60%" width="60%" >

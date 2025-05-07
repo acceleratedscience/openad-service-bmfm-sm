@@ -20,7 +20,7 @@ https://openad.accelerate.science/docs/model-service/available-services
 ## About
 
 <!-- description -->
-This OpenAD service provides access to the **Biomedmultiview** foundation model with checkpoints for the following properties:
+This OpenAD service provides access to the **Biomed-multi-view** foundation model with checkpoints for the following properties:
 
 | BACE | BBBP | CLINTOX | ESOL | FREESOLV | HIV |
 | ---- | ---- | ------- | ---- | -------- | --- |

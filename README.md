@@ -20,7 +20,7 @@ https://openad.accelerate.science/docs/model-service/available-services
 ## About
 
 <!-- description -->
-This OpenAD service provides access to BioMedical Foundation Models: Small Molecules (BMFM-SM), namely the **Biomed-multi-view** foundation model with checkpoints for the following properties:
+This OpenAD service provides access to BioMedical Foundation Models: Small Molecules (BMFM-SM), namely the **Biomed-multi-view** foundation model with checkpoints for inference on the following small-molecule properties, a subset of the MoleculeNet benchmarks:
 
 | BACE | BBBP | CLINTOX | ESOL | FREESOLV | HIV |
 | ---- | ---- | ------- | ---- | -------- | --- |

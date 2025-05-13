@@ -1,4 +1,4 @@
-# BMFM-SM &nbsp;/&nbsp; Inference for SMILES
+# BMFM-SM &nbsp;/&nbsp; Property Prediction on SMILES Input
 
 <!--
 The description & support tags are consumed by the generate_docs() script
@@ -21,7 +21,7 @@ https://openad.accelerate.science/docs/model-service/available-services
 ## About
 
 <!-- description -->
-This OpenAD service provides access to BioMedical Foundation Models: Small Molecules (BMFM-SM), namely the **Biomed-multi-view** foundation model with checkpoints for inference on the following small-molecule properties, a subset of the MoleculeNet benchmarks:
+This OpenAD service provides access to BioMedical Foundation Models: Small Molecules (BMFM-SM), namely the **Biomed-multi-view** foundation model. BMFM-SM has models for predicting many properties from the well-known MoleculeNet benchmarks:
 
 | BACE | BBBP | CLINTOX | ESOL | FREESOLV | HIV |
 | ---- | ---- | ------- | ---- | -------- | --- |
